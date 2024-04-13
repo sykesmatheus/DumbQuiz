@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16629864289",
+    "project_id": "dumbquiz-223f8",
+    "storage_bucket": "dumbquiz-223f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16629864289:android:1a6f066ef405cbd91c9720",
+        "android_client_info": {
+          "package_name": "com.senai.dumbquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7QwczKNKEB84c69inWrnTFPD1_wHYdkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
