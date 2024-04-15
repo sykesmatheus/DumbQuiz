@@ -44,7 +44,11 @@ public class Desafio03 extends AppCompatActivity {
         Log.d( "Valor03", "Quantidade de pontos: " + pontos.getTempo_Total());
     }
     public void erro(View v){
-        Intent intent = new Intent(Desafio03.this,MainActivity.class);
+        long tempoDecorrido = cronometro.parar();
+        int segundos = (int) (tempoDecorrido / 1000);
+        pontos.calcula_Tempo(segundos);
+        Intent intent = new Intent(Desafio03.this,GameOver.class);
+        intent.putExtra("origem", "Desafio03");
         startActivity(intent);
         finish();
     }

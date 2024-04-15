@@ -72,17 +72,27 @@ public class Desafio05 extends AppCompatActivity {
                         break;
                     case MotionEvent.ACTION_UP:
                         if (checarColisao(v, gol)) {
-                            // Faça aqui o que deseja ao atingir o gol
+                            long tempoDecorrido = cronometro.parar();
+                            int segundos = (int) (tempoDecorrido / 1000);
+                            pontos.calcula_Tempo(segundos);
+
                             Intent intent = new Intent(Desafio05.this, Desafio06.class);
                             startActivity(intent);
                             finish();
                         } else if (checarColisao(v, gol2)) {
-                            // Faça aqui o que deseja ao atingir o segundo gol
+                            long tempoDecorrido = cronometro.parar();
+                            int segundos = (int) (tempoDecorrido / 1000);
+                            pontos.calcula_Tempo(segundos);
                             Intent intent = new Intent(Desafio05.this, Desafio06.class);
+
                             startActivity(intent);
                             finish();
                         }else if(checarColisao(v,gol3)){
-                            Intent intent = new Intent(Desafio05.this, MainActivity.class);
+                            long tempoDecorrido = cronometro.parar();
+                            int segundos = (int) (tempoDecorrido / 1000);
+                            pontos.calcula_Tempo(segundos);
+                            Intent intent = new Intent(Desafio05.this, GameOver.class);
+                            intent.putExtra("origem", "Desafio05");
                             startActivity(intent);
                             finish();
                         }

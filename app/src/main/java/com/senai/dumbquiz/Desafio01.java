@@ -58,8 +58,13 @@ public class Desafio01 extends AppCompatActivity {
     }
 
     public void erro(View v){
-        Intent intent = new Intent(Desafio01.this,MainActivity.class);
+        long tempoDecorrido = cronometro.parar();
+        int segundos = (int) (tempoDecorrido / 1000);
+        pontos.calcula_Tempo(segundos);
+        Intent intent = new Intent(Desafio01.this,GameOver.class);
+        intent.putExtra("origem", "Desafio01");
         startActivity(intent);
+        finish();
     }
 
     // Corrija a assinatura do método exibirTempo
