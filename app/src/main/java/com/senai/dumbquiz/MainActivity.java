@@ -2,6 +2,7 @@ package com.senai.dumbquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -10,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +32,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Desafio01.class);
         startActivity(intent);
     }
-    public void Logar(View v){
-        Intent intent = new Intent(MainActivity.this, Login.class);
-        startActivity(intent);
+    public void Logar(View v) {
+        FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
+        if (usuarioAtual != null) {
+            Log.d("Usuario", "Usuário conectado: " + usuarioAtual.getEmail());
+            Intent intent = new Intent(MainActivity.this, Perfil.class);
+            startActivity(intent);
+        } else {
+            Log.d("Usuario", "Nenhum usuário conectado.");
+            Intent intent = new Intent(MainActivity.this, Login.class);
+            startActivity(intent);
+        }
     }
 }

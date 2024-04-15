@@ -41,7 +41,7 @@ public class Desafio02 extends AppCompatActivity {
                 finish();
             }
         });
-        Log.d( "Valor", "Quantidade de pontos: " + pontos.getTempo_Total());
+        Log.d( "Valor02", "Quantidade de pontos: " + pontos.getTempo_Total());
     }
     public void erro(View v){
         Intent intent = new Intent(Desafio02.this,MainActivity.class);

@@ -5,8 +5,10 @@
     <color name="grey">#716E6E</color>
     <color name="dark_grey">#292929</color>
     <color name="orange">#FFFFB344</color>
+    <color name="yellow">#FFC107</color>
     <color name="pink">#FFFB528B</color>
     <color name="pink_light">#FFF899B9</color>
     <color name="blue">#2196F3</color>
     <color name="noth">#0C673AB7</color>
+    <color name="transparente">#4F020202</color>
 </resources>

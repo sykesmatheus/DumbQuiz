@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dragon_back"
-    tools:context=".Desafio03">
+    android:background="@drawable/spider"
+    tools:context=".Desafio04">
 
     <ImageView
         android:layout_width="542dp"
         android:layout_height="102dp"
-        android:src="@drawable/desafio03"
+        android:src="@drawable/desafio04"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -21,49 +21,53 @@
 
     <ImageView
         android:onClick="erro"
-        android:layout_width="157dp"
-        android:layout_height="122dp"
-        android:src="@drawable/macaco"
+        android:layout_width="177dp"
+        android:layout_height="71dp"
+        android:background="@color/transparente"
+        android:src="@drawable/peter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.529" />
 
     <ImageView
-        android:id="@+id/tarta"
-        android:layout_width="157dp"
-        android:layout_height="122dp"
-        android:src="@drawable/tartaruga"
+        android:layout_width="177dp"
+        android:layout_height="71dp"
+        android:background="@color/transparente"
+        android:id="@+id/ben"
+        android:src="@drawable/ben"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
 
     <ImageView
+        android:layout_width="177dp"
+        android:layout_height="71dp"
+        android:background="@color/transparente"
         android:onClick="erro"
-        android:layout_width="157dp"
-        android:layout_height="122dp"
-        android:src="@drawable/nopelo"
+        android:src="@drawable/pedrinho"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintVertical_bias="0.952" />
 
     <ImageView
+        android:layout_width="177dp"
+        android:layout_height="71dp"
+        android:background="@color/transparente"
         android:onClick="erro"
-        android:layout_width="157dp"
-        android:layout_height="122dp"
-        android:src="@drawable/pitbull"
+        android:src="@drawable/clark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintHorizontal_bias="0.851"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
+        app:layout_constraintVertical_bias="0.744" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
